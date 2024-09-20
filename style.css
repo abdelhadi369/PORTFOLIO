@@ -46,14 +46,14 @@ body{
     color:white;
     font-family: "Montserrat";
 }
-.services h2{
+.services-text h2,.projects-text h2{
     color: white;
     font-family: "Koulen";
     font-weight: 400;
     text-align: center;
     font-size: 32px;
 }
-.services-text{
+.services-text,.projects-text{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -78,9 +78,50 @@ html{
 .service-1 h3,.service-2 h3,.service-3 h3{
     text-align: center;
     color: white;
-    font-family: "Koulen";
+    font-family: "Montserrat";
     font-weight: 400;
     font-size: 28px;
     padding: 0%;
     margin: 0%;
 }
+.line-decoration-2{
+    
+    width : 35%;
+    height: 5px;
+    background: linear-gradient(45deg, #260000, #8C0000);
+    
+}
+.projects-element{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.projects-element p{
+    
+    overflow: hidden;
+    color: white;
+    font-family: "Montserrat";
+    font-size: 60px;
+    font-weight: bold;
+    margin-inline: auto;
+    text-align: center;
+    width: 100%;
+    white-space: nowrap;
+    
+    animation: typing 4s steps(40, end)  /* Typing for 4s, then start blinking */
+}
+
+.projects{
+    margin-bottom: 100px;
+}
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;  /* 'ch' unit controls the number of characters to display */
+    }
+  }
+  
+  /* Keyframes for the blinking cursor */
